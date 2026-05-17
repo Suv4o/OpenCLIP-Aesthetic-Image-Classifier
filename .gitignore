@@ -5,6 +5,9 @@ classification/classification_results.csv
 # Postgres data volume (mounted by embeddings/docker-compose.yml)
 embeddings/pgdata/
 
+# Cluster viz generated coords (re-create with `uv run cluster-viz/generate_coords.py`)
+cluster-viz/frontend/public/coords.json
+
 # Python
 __pycache__/
 *.py[cod]
@@ -21,3 +24,4 @@ dist/
 
 # Articles
 article-v1.md
+article-v2.md

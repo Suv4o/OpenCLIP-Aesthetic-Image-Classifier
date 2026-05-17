@@ -1,71 +1,47 @@
-# OpenCLIP Aesthetic Image Classifier
+# OpenCLIP for a Photography Gallery
 
-Sorts a folder of images into 6 themed categories using zero-shot classification with OpenCLIP (`ViT-L-14` / `datacomp_xl_s13b_b90k`). Runs on Apple Silicon via the MPS backend.
+Three small projects that together turn a folder of landscape photographs into:
 
-Categories:
+1. A neatly categorised gallery (zero-shot classification with OpenCLIP).
+2. A searchable vector index (image embeddings stored in pgvector).
+3. A web app that finds similar photos by text query or by dropping in a sample image.
 
-- 🌌 Starlit Wonders
-- 🌿 Wild Horizons
-- ⏳ Time in Motion
-- 🌆 Urban Glow
-- 🌊 Ocean Whispers
-- 🏞️ Liquid Cascades
+All three share the same source images in `images/`.
 
-## Prerequisites
+## Subprojects
 
-- macOS (Apple Silicon recommended — falls back to CPU on other platforms)
-- [`uv`](https://docs.astral.sh/uv/) — install with `brew install uv`
+### [`classification/`](./classification/)
 
-No `pip install`, no venv. Dependencies are declared inline in the script (PEP 723) and `uv` handles the rest.
+A single Python script that uses OpenCLIP's zero-shot classification to sort every photo in `images/` into one of six themed buckets (🌌 Starlit Wonders, 🌿 Wild Horizons, ⏳ Time in Motion, 🌆 Urban Glow, 🌊 Ocean Whispers, 🏞️ Liquid Cascades). Writes a CSV with per-image scores and optionally copies files into per-category subfolders.
 
-## Usage
+Read [`classification/README.md`](./classification/README.md) for usage.
 
-1. Put your images in the `images/` folder (subfolders are walked recursively).
-2. Run:
+### [`embeddings/`](./embeddings/)
 
-   ```bash
-   uv run aesthetic_classifier.py
-   ```
+A Postgres database (running in Docker, with the `pgvector` extension) plus a Python script that turns every image into a 1024-dim embedding using OpenCLIP and stores it in the database. This is the data layer that powers the search app.
 
-First run downloads `torch`, `open_clip_torch`, etc. (~250 MB) and the CLIP weights (~1.7 GB). Subsequent runs reuse the cache and start instantly.
+Read [`embeddings/README.md`](./embeddings/README.md) for setup.
 
-## Output
+### [`search-app/`](./search-app/)
 
-- **`classification_results.csv`** — one row per image with the winning category, confidence, top-2 margin, an `uncertain` flag (margin < 0.05), and the score for every category.
-- **`sorted_output/<category>/`** — physical copies of each image grouped by predicted category. Set `COPY_INTO_SUBFOLDERS = False` in the script to skip this.
+A simple web app with a FastAPI backend and a Vite + TypeScript + Tailwind frontend (no React, no framework). Lets you:
 
-## Configuration
+- Type a natural-language query (`"foggy mountain at dawn"`) and get the most similar photos back.
+- Drop an image into the browser and get visually similar photos back.
 
-Edit the constants at the top of `aesthetic_classifier.py`:
+Read [`search-app/README.md`](./search-app/README.md) for how to run it.
 
-| Constant | Purpose |
-| --- | --- |
-| `IMAGE_DIR` | Folder to scan (default: `./images`) |
-| `OUTPUT_CSV` | Where to write the CSV |
-| `COPY_INTO_SUBFOLDERS` | If `True`, also copy files into per-category folders |
-| `COPY_DEST` | Destination for the copies |
-| `MODEL_NAME` / `PRETRAINED` | OpenCLIP model + weights (see below) |
-| `BATCH_SIZE` | Images per forward pass (default 32) |
-| `NUM_WORKERS` | DataLoader workers (set 0 if you hit multiprocessing issues) |
-| `UNCERTAIN_MARGIN` | Top1 − top2 probability gap below which an image is flagged uncertain |
-| `CATEGORIES` | Map of display name → list of prompts. Multiple prompts are averaged (prompt ensembling). |
+## Repository layout
 
-### Tuning the categories
-
-CLIP doesn't understand poetic labels like "Starlit Wonders" directly — it matches against the **prompts**, not the display name. To improve accuracy, edit the prompt lists inside `CATEGORIES` to be more concrete and descriptive of what the photos actually look like. Re-run; iterate.
-
-### Swapping the model
-
-For maximum accuracy (slower, but fine on 64 GB):
-
-```python
-MODEL_NAME = "ViT-H-14"
-PRETRAINED = "dfn5b"
+```
+OpenClip/
+├── README.md                   # this file
+├── images/                     # source photos shared by every subproject
+├── classification/             # Part 1 — zero-shot categorisation
+├── embeddings/                 # Part 2 — pgvector + bulk embedding indexer
+└── search-app/                 # Part 3 — FastAPI + Vite search UI
 ```
 
-For faster prototyping:
+## Hardware
 
-```python
-MODEL_NAME = "ViT-B-16"
-PRETRAINED = "datacomp_xl_s13b_b90k"
-```
+Built and tested on an M1 Max with 64 GB unified memory. The Python scripts use Apple's MPS GPU backend automatically; they will fall back to CPU on other platforms.

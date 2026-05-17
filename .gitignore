@@ -1,7 +1,23 @@
-sorted_output/
-classification_results.csv
+# Classification outputs
+classification/sorted_output/
+classification/classification_results.csv
 
+# Postgres data volume (mounted by embeddings/docker-compose.yml)
+embeddings/pgdata/
+
+# Python
 __pycache__/
 *.py[cod]
 .venv/
 .env
+
+# Node / Vite
+node_modules/
+dist/
+.vite/
+
+# macOS
+.DS_Store
+
+# Articles
+article-v1.md

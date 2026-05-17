@@ -28,13 +28,13 @@ from tqdm import tqdm
 # CONFIG
 # ----------------------------------------------------------------------
 PROJECT_ROOT = Path(__file__).resolve().parent
-IMAGE_DIR = PROJECT_ROOT / "images"
+IMAGE_DIR = PROJECT_ROOT.parent / "images"
 OUTPUT_CSV = PROJECT_ROOT / "classification_results.csv"
 COPY_INTO_SUBFOLDERS = True
 COPY_DEST = PROJECT_ROOT / "sorted_output"
 
-MODEL_NAME = "ViT-H-14"
-PRETRAINED = "dfn5b"
+MODEL_NAME = "ViT-L-14"
+PRETRAINED = "datacomp_xl_s13b_b90k"
 
 BATCH_SIZE = 32
 NUM_WORKERS = 6

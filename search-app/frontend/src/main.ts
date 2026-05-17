@@ -16,15 +16,27 @@ root.innerHTML = `
     <section class="space-y-3">
       <label class="block text-sm font-medium text-neutral-300" for="q">Search by text</label>
       <form id="text-form" class="flex gap-2">
-        <input
-          id="q"
-          name="q"
-          type="text"
-          placeholder='e.g. "foggy mountain at dawn", "neon city at night"'
-          class="flex-1 rounded-lg bg-neutral-900 border border-neutral-800 px-4 py-3 text-base
-                 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/40"
-          autocomplete="off"
-        />
+        <div class="relative flex-1">
+          <input
+            id="q"
+            name="q"
+            type="text"
+            placeholder='e.g. "foggy mountain at dawn", "neon city at night"'
+            class="w-full rounded-lg bg-neutral-900 border border-neutral-800 pl-4 pr-11 py-3 text-base
+                   focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/40"
+            autocomplete="off"
+          />
+          <button
+            id="clear-text"
+            type="button"
+            aria-label="Clear search"
+            class="hidden absolute top-1/2 right-2 -translate-y-1/2 w-7 h-7 rounded-full
+                   bg-neutral-800 hover:bg-red-500 border border-neutral-700 text-neutral-100 text-xs
+                   flex items-center justify-center transition-colors"
+          >
+            ✕
+          </button>
+        </div>
         <button
           type="submit"
           class="rounded-lg bg-emerald-500 hover:bg-emerald-400 text-neutral-950 font-medium px-5 py-3
@@ -51,7 +63,19 @@ root.innerHTML = `
         <p class="text-xs text-neutral-500 mt-1">JPG, PNG, WebP. The file stays on your machine — only the embedding is sent.</p>
         <input id="file" type="file" accept="image/*" class="hidden" />
         <div id="preview-wrap" class="hidden mt-6 flex justify-center">
-          <img id="preview" class="max-h-48 rounded-lg border border-neutral-800" alt="dropped preview" />
+          <div class="relative inline-block">
+            <img id="preview" class="max-h-48 rounded-lg border border-neutral-800" alt="dropped preview" />
+            <button
+              id="clear-image"
+              type="button"
+              aria-label="Clear image"
+              class="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-neutral-800 hover:bg-red-500
+                     border border-neutral-700 text-neutral-100 text-xs flex items-center justify-center
+                     transition-colors shadow-lg"
+            >
+              ✕
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -70,11 +94,31 @@ const pickBtn = document.getElementById("pick") as HTMLButtonElement;
 const fileInput = document.getElementById("file") as HTMLInputElement;
 const previewWrap = document.getElementById("preview-wrap") as HTMLDivElement;
 const previewImg = document.getElementById("preview") as HTMLImageElement;
+const clearImageBtn = document.getElementById("clear-image") as HTMLButtonElement;
+const clearTextBtn = document.getElementById("clear-text") as HTMLButtonElement;
 const statusEl = document.getElementById("status") as HTMLDivElement;
 const resultsEl = document.getElementById("results") as HTMLDivElement;
 
 function setStatus(text: string) {
   statusEl.textContent = text;
+}
+
+function clearImage() {
+  if (previewImg.src && previewImg.src.startsWith("blob:")) {
+    URL.revokeObjectURL(previewImg.src);
+  }
+  previewImg.removeAttribute("src");
+  previewWrap.classList.add("hidden");
+  fileInput.value = "";
+}
+
+function clearResults() {
+  resultsEl.innerHTML = "";
+  setStatus("");
+}
+
+function syncTextClearVisibility() {
+  clearTextBtn.classList.toggle("hidden", queryInput.value.length === 0);
 }
 
 function renderResults(hits: SearchHit[]) {
@@ -102,6 +146,7 @@ function renderResults(hits: SearchHit[]) {
 
 async function runTextSearch(query: string) {
   if (!query.trim()) return;
+  clearImage();
   setStatus(`Searching for "${query}"…`);
   resultsEl.innerHTML = "";
   try {
@@ -116,6 +161,9 @@ async function runTextSearch(query: string) {
 async function runImageSearch(file: File) {
   setStatus(`Searching by "${file.name}"…`);
   resultsEl.innerHTML = "";
+  if (previewImg.src && previewImg.src.startsWith("blob:")) {
+    URL.revokeObjectURL(previewImg.src);
+  }
   previewImg.src = URL.createObjectURL(file);
   previewWrap.classList.remove("hidden");
   try {
@@ -137,6 +185,21 @@ fileInput.addEventListener("change", () => {
   const file = fileInput.files?.[0];
   if (file) runImageSearch(file);
 });
+
+clearImageBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  clearImage();
+  clearResults();
+});
+
+clearTextBtn.addEventListener("click", () => {
+  queryInput.value = "";
+  syncTextClearVisibility();
+  clearResults();
+  queryInput.focus();
+});
+
+queryInput.addEventListener("input", syncTextClearVisibility);
 
 // Drag and drop on the whole drop zone.
 ["dragenter", "dragover"].forEach((evt) =>

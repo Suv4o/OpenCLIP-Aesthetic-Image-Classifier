@@ -53,6 +53,14 @@ PRETRAINED = "dfn5b"
 DEFAULT_LIMIT = 12
 MAX_LIMIT = 60
 
+# Minimum cosine similarity for a result to be considered "relevant".
+# pgvector's <#> operator returns NEGATIVE inner product, and for L2-normalised
+# vectors inner_product == cosine_similarity. So a hit qualifies when
+# distance <= -SIMILARITY_THRESHOLD.
+# Empirical defaults for CLIP:
+#   0.30 = strong match, 0.20 = decent, < 0.15 = usually noise.
+SIMILARITY_THRESHOLD = 0.20
+
 # Loaded at startup, cleared at shutdown.
 state: dict[str, Any] = {}
 
@@ -132,8 +140,7 @@ def _query_neighbours(embedding, limit: int) -> list[SearchHit]:
         cur.execute(sql, (embedding, embedding, limit))
         rows = cur.fetchall()
     # pgvector's <#> returns negative inner product; smaller (more negative) is closer.
-    # We pass it through as-is and let the client treat it as an ordering signal.
-    return [
+    all_hits = [
         SearchHit(
             filename=filename,
             category=category,
@@ -143,6 +150,13 @@ def _query_neighbours(embedding, limit: int) -> list[SearchHit]:
         )
         for filename, category, confidence, distance in rows
     ]
+    # Keep only hits above the cosine-similarity floor. If nothing qualifies,
+    # fall back to the single closest match so the user always sees *something*.
+    threshold_distance = -SIMILARITY_THRESHOLD
+    relevant = [h for h in all_hits if h.distance <= threshold_distance]
+    if not relevant and all_hits:
+        return all_hits[:1]
+    return relevant
 
 
 @torch.no_grad()

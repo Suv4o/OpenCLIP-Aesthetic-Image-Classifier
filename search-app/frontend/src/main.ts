@@ -121,6 +121,11 @@ function syncTextClearVisibility() {
   clearTextBtn.classList.toggle("hidden", queryInput.value.length === 0);
 }
 
+function clearTextInput() {
+  queryInput.value = "";
+  syncTextClearVisibility();
+}
+
 function renderResults(hits: SearchHit[]) {
   if (hits.length === 0) {
     resultsEl.innerHTML = `<p class="col-span-full text-neutral-500 text-sm">No matches.</p>`;
@@ -144,14 +149,23 @@ function renderResults(hits: SearchHit[]) {
     .join("");
 }
 
+// Requesting more than we'll likely show; the backend filters down by similarity.
+const REQUEST_LIMIT = 24;
+
+function formatResultStatus(hits: number, query: string): string {
+  if (hits === 0) return `No matches for "${query}".`;
+  if (hits === 1) return `Only the closest match for "${query}" — no strong matches found.`;
+  return `${hits} matches for "${query}".`;
+}
+
 async function runTextSearch(query: string) {
   if (!query.trim()) return;
   clearImage();
   setStatus(`Searching for "${query}"…`);
   resultsEl.innerHTML = "";
   try {
-    const hits = await searchByText(query, 24);
-    setStatus(`${hits.length} matches for "${query}".`);
+    const hits = await searchByText(query, REQUEST_LIMIT);
+    setStatus(formatResultStatus(hits.length, query));
     renderResults(hits);
   } catch (err) {
     setStatus(`Error: ${(err as Error).message}`);
@@ -159,6 +173,7 @@ async function runTextSearch(query: string) {
 }
 
 async function runImageSearch(file: File) {
+  clearTextInput();
   setStatus(`Searching by "${file.name}"…`);
   resultsEl.innerHTML = "";
   if (previewImg.src && previewImg.src.startsWith("blob:")) {
@@ -167,8 +182,8 @@ async function runImageSearch(file: File) {
   previewImg.src = URL.createObjectURL(file);
   previewWrap.classList.remove("hidden");
   try {
-    const hits = await searchByImage(file, 24);
-    setStatus(`${hits.length} matches for ${file.name}.`);
+    const hits = await searchByImage(file, REQUEST_LIMIT);
+    setStatus(formatResultStatus(hits.length, file.name));
     renderResults(hits);
   } catch (err) {
     setStatus(`Error: ${(err as Error).message}`);
@@ -193,8 +208,7 @@ clearImageBtn.addEventListener("click", (e) => {
 });
 
 clearTextBtn.addEventListener("click", () => {
-  queryInput.value = "";
-  syncTextClearVisibility();
+  clearTextInput();
   clearResults();
   queryInput.focus();
 });

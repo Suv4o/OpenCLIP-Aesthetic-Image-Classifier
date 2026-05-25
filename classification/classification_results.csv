@@ -1,0 +1,111 @@
+path,category,confidence,margin,uncertain,🌌 Starlit Wonders,🌿 Wild Horizons,⏳ Time in Motion,🌆 Urban Glow,🌊 Ocean Whispers,🏞️ Liquid Cascades
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/alfred-nicholas-gardens.jpg,🌿 Wild Horizons,0.8185,0.6421,False,0.0015,0.8185,0.0035,0.0,0.0,0.1764
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/alfred-nicholson-gardens.jpg,🌿 Wild Horizons,0.9543,0.9265,False,0.0011,0.9543,0.0168,0.0,0.0,0.0278
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/aura-australia-airey-inlet-lighthouse.jpg,🌌 Starlit Wonders,0.9924,0.9881,False,0.9924,0.0,0.0032,0.0043,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/aura-australia-airey-inlet-watching.jpg,🌌 Starlit Wonders,0.9968,0.9942,False,0.9968,0.0,0.0005,0.0026,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/aura-australia-lorne-great-ocean-road.jpg,🌌 Starlit Wonders,0.9857,0.9744,False,0.9857,0.0,0.0113,0.0021,0.0009,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/aura-australia-lorne-teddys-lookout.jpg,🌌 Starlit Wonders,0.9889,0.9832,False,0.9889,0.0003,0.0051,0.0057,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/ballarat-boat-house.jpg,🌊 Ocean Whispers,0.4817,0.178,False,0.0562,0.0098,0.1398,0.3037,0.4817,0.0089
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/balnarring-beach-pastel.jpg,🌊 Ocean Whispers,0.9361,0.8721,False,0.0,0.0,0.0639,0.0,0.9361,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/balnarring-beach-wooden-wall.jpg,🌊 Ocean Whispers,0.9892,0.9787,False,0.0002,0.0,0.0105,0.0,0.9892,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/balnarring-beach.jpg,🌊 Ocean Whispers,0.983,0.9661,False,0.0002,0.0,0.0168,0.0,0.983,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/beauchamp-falls.jpg,🏞️ Liquid Cascades,0.9998,0.9995,False,0.0,0.0002,0.0,0.0,0.0,0.9998
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/bitola-forty-holy-martyrs-krkardash.jpg,🌆 Urban Glow,0.9992,0.9987,False,0.0004,0.0002,0.0002,0.9992,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/bitola-from-above.jpg,🌿 Wild Horizons,0.9172,0.8715,False,0.0015,0.9172,0.0457,0.0355,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/blnaring-beach.jpg,🌊 Ocean Whispers,0.9983,0.9967,False,0.0,0.0,0.0016,0.0,0.9983,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/blue-both-house-perth.jpg,⏳ Time in Motion,0.6545,0.4293,False,0.0579,0.0006,0.6545,0.2252,0.061,0.0008
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/boat-and-sunrise.jpg,🌊 Ocean Whispers,0.9986,0.9979,False,0.0007,0.0,0.0005,0.0003,0.9986,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/bridge-water-bay.jpg,🌊 Ocean Whispers,0.8181,0.6376,False,0.0007,0.0001,0.1805,0.0,0.8181,0.0006
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/brighton-beach.jpg,🌊 Ocean Whispers,0.4318,0.1297,False,0.0398,0.0179,0.302,0.2083,0.4318,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/broken-jetty-at-kororoit-creek.jpg,⏳ Time in Motion,0.8014,0.6591,False,0.0451,0.0076,0.8014,0.0021,0.1423,0.0015
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/cadylac-canyon.jpg,🌊 Ocean Whispers,0.7934,0.5946,False,0.0001,0.0,0.0077,0.0,0.7934,0.1987
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/camel-rock-bermagui-nsw.jpg,🌌 Starlit Wonders,0.9824,0.9649,False,0.9824,0.0,0.0175,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/camp-schanck-lighthouse.jpg,🌌 Starlit Wonders,0.9979,0.9957,False,0.9979,0.0,0.0021,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/cape-schanck-start-trials.jpg,🌌 Starlit Wonders,0.9958,0.9916,False,0.9958,0.0,0.0042,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/cape-woolamai copy.jpg,🌊 Ocean Whispers,0.698,0.4149,False,0.0021,0.0125,0.2832,0.0,0.698,0.0041
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/cape-woolamai-walk.jpg,🌊 Ocean Whispers,0.8801,0.7995,False,0.0045,0.0303,0.0806,0.0001,0.8801,0.0044
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/cape-woolamai.jpg,🌊 Ocean Whispers,0.6294,0.2685,False,0.0089,0.0004,0.3609,0.0003,0.6294,0.0002
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/carrington-falls-nsw.jpg,🏞️ Liquid Cascades,0.991,0.9821,False,0.0,0.0089,0.0002,0.0,0.0,0.991
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/carrington-falls.jpg,🏞️ Liquid Cascades,0.8842,0.7685,False,0.0,0.1157,0.0001,0.0,0.0,0.8842
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/clifton-springs-oct.jpg,🌊 Ocean Whispers,0.83,0.6621,False,0.0016,0.0002,0.1678,0.0003,0.83,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/corio-bay-geelong-pie.jpg,🌌 Starlit Wonders,0.8825,0.8199,False,0.8825,0.0,0.0225,0.0324,0.0626,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/docklands-firelight-festival.jpg,🌆 Urban Glow,1.0,0.9999,False,0.0,0.0,0.0,1.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/docklands-melbourne.jpg,🌆 Urban Glow,0.9378,0.8762,False,0.0001,0.0,0.0616,0.9378,0.0005,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/dragon-head-mornington.jpg,🌊 Ocean Whispers,0.9707,0.9585,False,0.0037,0.0016,0.0122,0.0,0.9707,0.0119
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/elwood.jpg,⏳ Time in Motion,0.9887,0.9831,False,0.0031,0.0,0.9887,0.0056,0.0025,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/erskine-falls.jpg,🏞️ Liquid Cascades,0.9998,0.9996,False,0.0,0.0002,0.0,0.0,0.0,0.9998
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/flinders-blowhole.jpg,🌊 Ocean Whispers,0.5647,0.3615,False,0.2032,0.0447,0.1395,0.0007,0.5647,0.0471
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/flinders-in-february-sunset.jpg,🌆 Urban Glow,0.9161,0.8323,False,0.0,0.0,0.0839,0.9161,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/galicica-vidikovec.jpg,🌿 Wild Horizons,0.9879,0.9778,False,0.0014,0.9879,0.0004,0.0002,0.0101,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/george-bass-coastal-walk.jpg,🌊 Ocean Whispers,0.8428,0.7529,False,0.0033,0.0614,0.0899,0.0003,0.8428,0.0024
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/george-bass-walk.jpg,🌿 Wild Horizons,0.9406,0.9153,False,0.0114,0.9406,0.0253,0.0002,0.0223,0.0002
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/glasshouse-rocks-nsw copy.jpg,🌊 Ocean Whispers,0.7963,0.6622,False,0.0018,0.0039,0.1341,0.0,0.7963,0.0639
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/glasshouse-rocks-nsw.jpg,🌊 Ocean Whispers,0.9567,0.9198,False,0.0057,0.0007,0.0368,0.0,0.9567,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/great-ocean-road-the-twelve-apostles.jpg,🌊 Ocean Whispers,0.9072,0.8275,False,0.0058,0.0796,0.0029,0.0002,0.9072,0.0043
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/hopetoun-falls-great-ocean-road.jpg,🏞️ Liquid Cascades,0.9919,0.9839,False,0.0,0.008,0.0,0.0,0.0,0.9919
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/hopetoun-falls-walk.jpg,🏞️ Liquid Cascades,0.9992,0.9987,False,0.0,0.0005,0.0002,0.0,0.0,0.9992
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/hopetoun-falls.jpg,🏞️ Liquid Cascades,0.9953,0.9905,False,0.0,0.0047,0.0,0.0,0.0,0.9953
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/keyhole-rock.jpg,🌊 Ocean Whispers,0.9897,0.9829,False,0.0005,0.0002,0.0068,0.0,0.9897,0.0028
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/kow-swamp.jpg,🌌 Starlit Wonders,0.9743,0.963,False,0.9743,0.0064,0.0114,0.0046,0.0032,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/lonely-tree.jpg,🌿 Wild Horizons,0.9171,0.8613,False,0.0206,0.9171,0.0559,0.0058,0.0003,0.0003
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/lord-arch-great-ocean-road.jpg,🏞️ Liquid Cascades,0.452,0.124,False,0.0049,0.1711,0.044,0.0,0.328,0.452
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-batman-avenue.jpg,🌆 Urban Glow,0.9378,0.8756,False,0.0,0.0,0.0622,0.9378,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-blue-hour-bridge.jpg,🌆 Urban Glow,0.9998,0.9996,False,0.0,0.0,0.0002,0.9998,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-city-sunset-view.jpg,🌆 Urban Glow,0.9564,0.9136,False,0.0005,0.0427,0.0004,0.9564,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-city.jpg,🌆 Urban Glow,0.9594,0.9188,False,0.0,0.0,0.0406,0.9594,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-docklands-from-above.jpg,🌆 Urban Glow,0.9925,0.9851,False,0.0,0.0,0.0075,0.9925,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-in-autumn.jpg,🌆 Urban Glow,0.9999,0.9997,False,0.0,0.0,0.0001,0.9999,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-lightning-storm.jpg,🌆 Urban Glow,0.9985,0.9974,False,0.0004,0.0,0.0011,0.9985,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-new-years-eve.jpg,🌆 Urban Glow,0.9958,0.9934,False,0.0019,0.0,0.0023,0.9958,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-princes-bridge.jpg,🌆 Urban Glow,0.9943,0.9886,False,0.0,0.0,0.0057,0.9943,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-star.jpg,⏳ Time in Motion,0.9436,0.8885,False,0.0012,0.0,0.9436,0.0551,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-swan-bridge-street.jpg,🌆 Urban Glow,0.9997,0.9995,False,0.0,0.0,0.0002,0.9997,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-the-first-day-of-winter.jpg,🌆 Urban Glow,0.9999,0.9997,False,0.0,0.0,0.0001,0.9999,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-the-lego-house.jpg,⏳ Time in Motion,0.8242,0.6484,False,0.0,0.0,0.8242,0.1758,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/melbourne-train-trails.jpg,🌆 Urban Glow,0.9335,0.8671,False,0.0,0.0,0.0665,0.9335,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mildura-perry-sandhills.jpg,🌿 Wild Horizons,0.8894,0.8173,False,0.0721,0.8894,0.0277,0.0001,0.0106,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/milkyway-pinacles-mpe.jpg,🌌 Starlit Wonders,1.0,1.0,False,1.0,0.0,0.0,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mordialloc.jpg,🌊 Ocean Whispers,0.9993,0.9986,False,0.0,0.0,0.0007,0.0,0.9993,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mount-donna-buang-yarra-ranges-national-park.jpg,🌌 Starlit Wonders,1.0,1.0,False,1.0,0.0,0.0,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mount-martha-mornington.jpg,🌊 Ocean Whispers,0.9756,0.9512,False,0.0,0.0,0.0243,0.0,0.9756,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mount-oberon-summit-wilsons-promontory.jpg,🌿 Wild Horizons,0.8281,0.7234,False,0.0435,0.8281,0.0229,0.0006,0.1047,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mt-marta.jpg,🌊 Ocean Whispers,0.8038,0.6187,False,0.0019,0.0,0.1851,0.0087,0.8038,0.0004
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/mundi-mundi-broken-hill.jpg,🌿 Wild Horizons,0.5094,0.2307,False,0.2788,0.5094,0.1621,0.0482,0.0015,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/on-the-edge-together.jpg,🌊 Ocean Whispers,0.9818,0.9735,False,0.0031,0.0054,0.0083,0.0001,0.9818,0.0014
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/otway-national-park-lower-kalimna-falls.jpg,🏞️ Liquid Cascades,0.9987,0.9977,False,0.0,0.001,0.0002,0.0,0.0,0.9987
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/perth-from-the-piar.jpg,🌆 Urban Glow,0.9937,0.9875,False,0.0001,0.0,0.0061,0.9937,0.0001,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/phantom-falls-otway-national-park.jpg,🏞️ Liquid Cascades,0.9994,0.9989,False,0.0,0.0005,0.0002,0.0,0.0,0.9994
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/photo-in-the-melbourne-city.jpg,🌆 Urban Glow,0.9999,0.9997,False,0.0,0.0,0.0001,0.9999,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/pinnacles-lookout-phillip-island.jpg,🌊 Ocean Whispers,0.9383,0.9149,False,0.0004,0.0234,0.0158,0.0,0.9383,0.022
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/pinnacles-phillip-island copy.jpg,🌌 Starlit Wonders,0.9835,0.9691,False,0.9835,0.0002,0.0144,0.0,0.0018,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/pinnacles-phillip-island.jpg,🌊 Ocean Whispers,0.9298,0.8774,False,0.0013,0.0141,0.0524,0.0,0.9298,0.0023
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/pinnacles-western-australia.jpg,🌌 Starlit Wonders,0.9992,0.9984,False,0.9992,0.0,0.0008,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/port-melbourn.jpg,🌆 Urban Glow,0.9447,0.8906,False,0.0001,0.0,0.054,0.9447,0.0012,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/sendang-gile-waterfalls.jpg,🏞️ Liquid Cascades,0.9998,0.9997,False,0.0,0.0001,0.0,0.0,0.0,0.9998
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/shelley-beach-portsea.jpg,🌊 Ocean Whispers,0.9431,0.8913,False,0.0046,0.0002,0.0518,0.0002,0.9431,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/shelly-beach-portsea.jpg,🌊 Ocean Whispers,0.9915,0.9832,False,0.0001,0.0,0.0083,0.0,0.9915,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/shelly-beach.jpg,🌊 Ocean Whispers,0.8717,0.7467,False,0.0024,0.0001,0.125,0.0006,0.8717,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/shipwreck-ss-speke-phillip-island.jpg,🌌 Starlit Wonders,0.9932,0.9864,False,0.9932,0.0,0.0068,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/st-kilda-pier-melbourne.jpg,🌆 Urban Glow,0.9731,0.9486,False,0.0003,0.0,0.0245,0.9731,0.0021,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/star-trails-big-lake-pelister.jpg,🌌 Starlit Wonders,0.9979,0.9959,False,0.9979,0.0001,0.002,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/stirling-range.jpg,🌿 Wild Horizons,0.9999,0.9998,False,0.0001,0.9999,0.0,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/sun-remo.jpg,⏳ Time in Motion,0.5135,0.1214,False,0.0931,0.3921,0.5135,0.001,0.0003,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/sunrise-uluru.jpg,🌿 Wild Horizons,0.9929,0.9866,False,0.0064,0.9929,0.0002,0.0005,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/tasman-drive-coast-rye.jpg,🌊 Ocean Whispers,0.9428,0.8968,False,0.0006,0.046,0.0091,0.0,0.9428,0.0015
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/teddys-lookout-lorne.jpg,⏳ Time in Motion,0.5251,0.1592,False,0.0228,0.0697,0.5251,0.0145,0.366,0.0018
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/teddys-lookout.jpg,⏳ Time in Motion,0.9355,0.8959,False,0.0181,0.0047,0.9355,0.0014,0.0396,0.0007
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/tenby-point-tree.jpg,⏳ Time in Motion,0.8157,0.6464,False,0.0051,0.0076,0.8157,0.0,0.1694,0.0022
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-cliffes.jpg,🌊 Ocean Whispers,0.9339,0.8902,False,0.001,0.0203,0.0437,0.0,0.9339,0.0012
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-falls-new-south-wales.jpg,🏞️ Liquid Cascades,0.9976,0.9954,False,0.0,0.0022,0.0001,0.0,0.0,0.9976
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-pinnacles.jpg,🌊 Ocean Whispers,0.8639,0.7397,False,0.0014,0.1242,0.002,0.0001,0.8639,0.0083
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-shelley-beach-portsea.jpg,🌊 Ocean Whispers,0.6834,0.37,False,0.0017,0.0003,0.3134,0.0,0.6834,0.0013
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-shipwreck-ss-speke-phillip-island.jpg,🌌 Starlit Wonders,0.9959,0.9919,False,0.9959,0.0,0.0041,0.0,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/the-tree-at-tenby-point.jpg,⏳ Time in Motion,0.874,0.7513,False,0.0018,0.001,0.874,0.0,0.1226,0.0006
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/tiu-kelep-waterfalls.jpg,🏞️ Liquid Cascades,0.9994,0.9989,False,0.0,0.0006,0.0,0.0,0.0,0.9994
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/toorongo-falls.jpg,🏞️ Liquid Cascades,0.9653,0.9307,False,0.0,0.0001,0.0346,0.0,0.0,0.9653
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/uluru-stars.jpg,🌌 Starlit Wonders,0.9869,0.9739,False,0.9869,0.0,0.013,0.0001,0.0,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/veternica-big-lake-pelister.jpg,🌿 Wild Horizons,0.9959,0.9919,False,0.004,0.9959,0.0,0.0,0.0,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/wannon-falls-scenic-reserve.jpg,🏞️ Liquid Cascades,0.9995,0.9993,False,0.0,0.0002,0.0002,0.0,0.0,0.9995
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/wilson-promontory-national-park-whisky-bay.jpg,🌊 Ocean Whispers,0.991,0.9848,False,0.0015,0.0012,0.0062,0.0,0.991,0.0001
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/wilsons-prom-pillar-point.jpg,🌊 Ocean Whispers,0.863,0.7343,False,0.0077,0.0005,0.1287,0.0001,0.863,0.0
+/Users/Suv4o/Development/Blog-Projects/OpenClip/images/yarra-bulvd.jpg,⏳ Time in Motion,0.8808,0.7616,False,0.0001,0.0,0.8808,0.1191,0.0,0.0

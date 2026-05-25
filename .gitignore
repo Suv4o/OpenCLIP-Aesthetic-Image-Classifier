@@ -1,6 +1,5 @@
 # Classification outputs
 classification/sorted_output/
-classification/classification_results.csv
 
 # Postgres data volume (mounted by embeddings/docker-compose.yml)
 embeddings/pgdata/
@@ -21,7 +20,3 @@ dist/
 
 # macOS
 .DS_Store
-
-# Articles
-article-v1.md
-article-v2.md

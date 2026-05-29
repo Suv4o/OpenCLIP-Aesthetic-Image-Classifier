@@ -1,5 +1,13 @@
 # OpenCLIP for a Photography Gallery
 
+> **This project is part of a blog post.** For the full write-up, context, and explanations behind the decisions made here, check out the article:
+>
+> [![What OpenCLIP Did to My Photo Library](https://res.cloudinary.com/suv4o/image/upload/q_auto,f_auto,w_750,e_sharpen:100/v1779711340/blog/what-openclip-did-to-my-photo-library/what-openclip-did-to-my-photo-library_qecnvm)](https://www.trpkovski.com/2026/05/27/what-openclip-did-to-my-photo-library)
+>
+> [What OpenCLIP Did to My Photo Library](https://www.trpkovski.com/2026/05/27/what-openclip-did-to-my-photo-library)
+
+---
+
 Four small projects that together turn a folder of landscape photographs into:
 
 1. A neatly categorised gallery (zero-shot classification with OpenCLIP).
